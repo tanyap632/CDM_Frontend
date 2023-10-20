@@ -18,14 +18,14 @@ function btn_stock() {
     if (mediaQuery.matches) {
         if (style.display === 'none') {
             document.getElementById('sub-nav').style.display = 'block';
-            document.getElementById('btn_sub-nav').style.background = 'url(./IMAGES/btn-close.svg)';
-            hover.addEventListener('mouseover', () => { hover.style.background = 'url(./IMAGES/btn-close-hover.svg)'; });
-            hover.addEventListener('mouseout', () => { hover.style.background = 'url(./IMAGES/btn-close.svg)'; });
+            document.getElementById('btn_sub-nav').style.background = 'url(/IMAGES/btn-close.svg)';
+            hover.addEventListener('mouseover', () => { hover.style.background = 'url(/IMAGES/btn-close-hover.svg)'; });
+            hover.addEventListener('mouseout', () => { hover.style.background = 'url(/IMAGES/btn-close.svg)'; });
         } else if (style.display !== 'none') {
             document.getElementById('sub-nav').style.display = 'none';
-            document.getElementById('btn_sub-nav').style.background = 'url(./IMAGES/btn-stock.svg)';
-            hover.addEventListener('mouseover', () => { hover.style.background = 'url(./IMAGES/btn-stock-hover.svg)'; });
-            hover.addEventListener('mouseout', () => { hover.style.background = 'url(./IMAGES/btn-stock.svg)'; });
+            document.getElementById('btn_sub-nav').style.background = 'url(/IMAGES/btn-stock.svg)';
+            hover.addEventListener('mouseover', () => { hover.style.background = 'url(/IMAGES/btn-stock-hover.svg)'; });
+            hover.addEventListener('mouseout', () => { hover.style.background = 'url(/IMAGES/btn-stock.svg)'; });
         }
     }
 
@@ -40,12 +40,12 @@ function btn_stock_adaptive() {
         if (style.display === 'none') {
             document.getElementById('sub-nav').style.display = 'none';
             document.getElementById('sub_nav_adaptive').style.display = 'block';
-            document.getElementById('btn_sub-nav').style.background = 'url(./IMAGES/btn-close.svg)';
+            document.getElementById('btn_sub-nav').style.background = 'url(/IMAGES/btn-close.svg)';
 
         } else if (style.display !== 'none') {
             document.getElementById('sub-nav').style.display = 'none';
             document.getElementById('sub_nav_adaptive').style.display = 'none';
-            document.getElementById('btn_sub-nav').style.background = 'url(./IMAGES/btn-stock.svg)';
+            document.getElementById('btn_sub-nav').style.background = 'url(/IMAGES/btn-stock.svg)';
         }
     }
 }
