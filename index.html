@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>СДМ-Frontend - Похвальная Т.В. - СовПК, Информационные системы и программирование, 4 курс </title>
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <!-- Складное меню -->
+        <div class="block_stock_and_logo">
+            <button class="btn_stock" id="btn_sub-nav" onclick="btn_stock(); btn_stock_adaptive()"></button>
+
+            <div id="sub-nav">
+
+                <ul>
+                    <li><a href="#">
+                            Пункт в меню
+                        </a></li>
+                    <li><a href="#">
+                            Пункт в меню
+                        </a></li>
+                    <div class="sub-nav_multimenu">
+                        <li class="nav_multiitem"><a href="#">
+                                Пункт в меню
+                            </a></li>
+                        <button id="left_arrow"><svg width="14" height="25" viewBox="0 0 14 25"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="left_arrow">
+                                    <path id="Line 4" d="M1.89999 1.94737L12.8231 12.3684" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path id="Line 5" d="M1.25636 23.4035L12.1794 12.9825" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </g>
+                            </svg></button>
+                        <ul class="sub-nav_multiitem">
+                            <li><a href="#">
+                                    Пункт в меню
+                                </a></li>
+                            <li><a href="#">
+                                    Пункт в меню
+                                </a></li>
+                            <li><a href="#">
+                                    Пункт в меню
+                                </a></li>
+                            <li><a href="#">
+                                    Пункт в меню
+                                </a></li>
+                        </ul>
+
+
+
+                    </div><br>
+                    <div class="sub-nav_multimenu">
+                        <li><a href="#">
+                                Пункт в меню
+                            </a></li>
+                        <svg width="14" height="25" viewBox="0 0 14 25" xmlns="http://www.w3.org/2000/svg">
+                            <g id="left_arrow">
+                                <path id="Line 4" d="M1.89999 1.94737L12.8231 12.3684" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path id="Line 5" d="M1.25636 23.4035L12.1794 12.9825" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </g>
+                        </svg>
+                    </div>
+                    <li><a href="#">
+                            Пункт в меню
+                        </a></li>
+                    <li><a href="#">
+                            Пункт в меню
+                        </a></li>
+                </ul>
+
+            </div>
+            <div id="sub_nav_adaptive">
+                <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Мероприятия</a></li>
+                    <li><a href="#">Сериалы</a></li>
+                    <li><a href="#">Озвучка</a></li>
+                    <li><a href="#">Субтитры</a></li>
+                    <div class="sub_nav_adaptive_multimenu">
+                        <li><a href="#">Пункт в меню</a></li>
+                        <button id="btn_adaptive_arrow" onclick="adaptive_arrow()"><svg width="30" height="16" viewBox="0 0 30 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="multiitem_adaptive_arrow">
+                                    <line id="Line 1" x1="1.5" y1="-1.5" x2="17.8248" y2="-1.5"
+                                        transform="matrix(0.731812 0.681506 -0.731812 0.681506 0 2)"
+                                        stroke-width="3" stroke-linecap="round" />
+                                    <line id="Line 3" x1="1.5" y1="-1.5" x2="17.8248" y2="-1.5"
+                                        transform="matrix(0.731812 -0.681506 0.731812 0.681506 15 15.17)"
+                                        stroke-width="3" stroke-linecap="round" />
+                                </g>
+                            </svg></button>
+                            <ul id="sub_nav_adaptive_multiitem">
+                                <li><a href="#">
+                                        Пункт в меню
+                                    </a></li>
+                                <li><a href="#">
+                                        Пункт в меню
+                                    </a></li>
+                                <li><a href="#">
+                                        Пункт в меню
+                                    </a></li>
+                                <li><a href="#">
+                                        Пункт в меню
+                                    </a></li>
+                            </ul>
+                    </div>
+                    <div class="sub_nav_adaptive_multimenu">
+                        <li><a href="#">Пункт в меню</a></li>
+                        <button id="btn_adaptive_arrow"><svg width="30" height="16" viewBox="0 0 30 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="multiitem_adaptive_arrow">
+                                    <line id="Line 1" x1="1.5" y1="-1.5" x2="17.8248" y2="-1.5"
+                                        transform="matrix(0.731812 0.681506 -0.731812 0.681506 0 2)"
+                                        stroke-width="3" stroke-linecap="round" />
+                                    <line id="Line 3" x1="1.5" y1="-1.5" x2="17.8248" y2="-1.5"
+                                        transform="matrix(0.731812 -0.681506 0.731812 0.681506 15 15.17)"
+                                        stroke-width="3" stroke-linecap="round" />
+                                </g>
+                            </svg></button>
+            
+                    </div>
+                    <li><a href="#">Пункт в меню</a></li>
+                </ul>
+            </div>
+
+
+
+            <!-- Лого -->
+            <svg width="81" height="37" viewBox="0 0 81 37" xmlns="http://www.w3.org/2000/svg">
+                <g id="logo_default">
+                    <path id="Vector"
+                        d="M0.00510396 18.6371C-0.318125 4.83583 14.7716 -4.85768 28.0158 2.71747C32.379 5.21304 36.0829 8.9091 40.0654 12.9458C40.2465 13.1294 40.3301 13.1104 40.4996 12.9399C46.7288 6.67243 55.7484 -2.88438 68.3821 0.833871C73.6989 2.39866 77.3934 5.84157 79.2862 11.0295C85.621 28.3927 67.4495 42.7681 51.8667 33.2387C47.9366 30.8352 44.5424 27.5188 40.5304 23.4406C40.3163 23.2229 40.2197 23.2537 40.0239 23.4508C35.4658 28.0384 30.5595 33.0251 24.4993 35.1127C12.1672 39.3607 0.345117 32.0261 0.00510396 18.6371ZM7.72193 18.3696C8.1151 26.3418 14.2592 30.0583 20.8056 28.6451C26.4632 27.4238 31.2092 22.4575 35.2514 18.3101C35.3876 18.1703 35.3113 18.1136 35.2177 18.0264C31.7068 14.7555 28.2781 10.7599 23.9569 8.70382C15.582 4.71877 7.69375 10.563 7.72193 18.3696ZM72.8415 18.0326C72.5926 10.328 66.5026 6.12942 59.4849 7.77235C53.9634 9.065 49.2451 14.0078 45.3251 18.0278C45.1891 18.1672 45.2413 18.2324 45.3528 18.3362C50.254 22.9014 56.0378 30.1094 63.8522 28.7957C69.0574 27.9206 72.8531 23.3955 72.8415 18.0326Z" />
+                </g>
+            </svg>
+        </div>
+        <!-- Основное меню сайта -->
+        <div id="main-nav">
+            <ul>
+                <li><a href="#">
+                        Новости
+                    </a></li>
+                <li><a href="#">
+                        Мероприятия
+                    </a></li>
+                <li><a href="#">
+                        Сериалы
+                    </a></li>
+                <li><a href="#">
+                        Озвучка
+                    </a></li>
+                <li><a href="#">
+                        Субтитры
+                    </a></li>
+            </ul>
+        </div>
+
+        <!-- Поиск и корзина -->
+        <div class="wrapper_search_basket">
+            <div class="wrapper_search">
+                <from action="" method="get" class="search_form">
+
+                    <input type="search" class="search_form__txt" id="search_form__txt" placeholder="Поиск...">
+                    <button class="search_form__btn" id="submit" type="submit" onclick="search()">
+                        <svg width="20" height="25" viewBox="0 0 20 25" xmlns="http://www.w3.org/2000/svg">
+                            <g id="search_magnigier">
+                                <path id="Vector"
+                                    d="M4.59475 1.23142C2.47088 2.45753 0.951504 4.43762 0.316819 6.80647C-0.318002 9.17532 0.00791044 11.6497 1.23402 13.7736C2.86943 16.606 5.9188 18.3656 9.19248 18.3656C10.2261 18.3656 11.2517 18.1877 12.224 17.8463L16.3542 25L19.2991 23.2997L15.1696 16.1472C16.5645 14.9537 17.5688 13.3708 18.0543 11.5591C18.6889 9.19028 18.363 6.71602 17.1369 4.59201C15.5016 1.7596 12.4521 0 9.1786 0C7.57516 0 5.99008 0.425753 4.59475 1.23142ZM14.192 6.2923C14.9641 7.62955 15.1692 9.18756 14.7696 10.6791C14.3699 12.1706 13.4133 13.4172 12.076 14.1893C11.1971 14.6968 10.1999 14.965 9.19248 14.965C7.12996 14.965 5.2089 13.857 4.17907 12.0733C3.407 10.736 3.20187 9.17817 3.60165 7.68654C4.00128 6.19505 4.95794 4.94839 6.29518 4.17619C7.17403 3.66882 8.17121 3.40058 9.1786 3.40058C11.2413 3.40058 13.1622 4.50863 14.192 6.2923Z" />
+                            </g>
+                        </svg>
+                    </button>
+
+                </from>
+            </div>
+            <div class="wrapper_basket">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="basket_default" clip-path="url(#clip0_2_54)">
+                        <path id="Vector"
+                            d="M22.7222 9L20.8241 20.1414C20.5899 21.5159 20.4728 22.2032 20.1672 22.7172C19.8976 23.1705 19.5265 23.5275 19.095 23.7489C18.6056 24 18.0086 24 16.8145 24H8.18542C6.99137 24 6.39434 24 5.90499 23.7489C5.47346 23.5275 5.10243 23.1705 4.83287 22.7172C4.52719 22.2032 4.41011 21.5159 4.17593 20.1414L2.27778 9M1 9H24M7.38889 13.5V13.515M17.6111 13.5V13.515M4.83333 9L8.66667 0M20.1667 9L16.3333 0"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2_54">
+                            <rect width="25" height="25" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
