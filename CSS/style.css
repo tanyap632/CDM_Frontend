@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("../FONTS/Roboto/Roboto-Regular.ttf")
+    src: url("/FONTS/Roboto/Roboto-Regular.ttf")
 }
 
 /* Общие стили для элементов */
