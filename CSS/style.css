@@ -40,7 +40,7 @@
 /* Кнопка складного меню*/
 
 .btn_stock {
-    background: url(./IMAGES/btn-stock.svg);
+    background: url(../IMAGES/btn-stock.svg);
     width: 40px;
     border: none;
     height: 40px;
@@ -48,7 +48,7 @@
 }
 
 .btn_stock:hover {
-    background: url(./IMAGES/btn-stock-hover.svg);
+    background: url(../IMAGES/btn-stock-hover.svg);
     display: block;
     transition: all .3s ease-out;
 }
